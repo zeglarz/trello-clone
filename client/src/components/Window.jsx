@@ -19,6 +19,10 @@ export default function Window({ show, onClose, item }) {
         <div>
           <h2>Description</h2>
           <p>{item.count}</p>
+          <h2>Status</h2>
+          <p>
+            {item.icon} {`${item.status.charAt(0).toUpperCase()}`${item.status.slice(1)}}
+          </p>
         </div>
       </div>
     </Modal>
